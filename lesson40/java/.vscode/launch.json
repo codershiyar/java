@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Admin",
+            "request": "launch",
+            "mainClass": "Admin",
+            "projectName": "java_c87954b4"
+        }
+    ]
+}
