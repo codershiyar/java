@@ -1,0 +1,27 @@
+ 
+
+
+//  بالدرس 9 تم شرح عناصر التالية  
+      // toLowerCase()       Converts a string to lower case letters - تحويل النص إلى احرف الصغيرة
+      // toUpperCase()       Converts a string to upper case letters - يحول النص إلى أحرف كبيرة
+      // concat()            Appends a string to the end of another string - إلحاق النص بنهايةأخرى
+      // length()            Returns the length of a specified string - إرجاع طول النص المحدد
+                             // إرجاع تمركز نص الذي يطابق مع الجزء المحددة 
+      // indexOf()            Returns the position of the first found occurrence of specified characters in a string
+
+      //  بالدرس 30 تم شرح عناصر التالية 
+      // charAt()             Returns the character at the specified index (position) - إرجاع الحرف عند الفهرس المحدد )
+      // substring            Extracts the characters from a string - يستخدم لقطع النص وإعادة لك الجزء المحدد الذي قطعته
+      // trim()               Removes whitespace from both ends of a string	يحذف الفراغات من بداية ونهاية النص
+
+      // equals()          //   يقارن 2 نصوص . ويقوم بإعادة 
+                            //   true 
+                            //   إذا تطابق 2 نصوص , ويقوم بإعادة
+                            //   false
+                            //   إذا لم تطابق 2 نصوص
+                   Compares two strings. Returns true if the strings are equal, and false if not
+                            
+               //يبحث في نص لقيمة محددة ، ويعيد نص جديدة حيث يتم استبدال القيم المحددة 
+       // replace()         // Searches a string for a specified value, and returns a 
+                            // new string where the specified values are replaced	
+                  
