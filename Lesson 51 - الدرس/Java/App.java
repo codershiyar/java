@@ -3,7 +3,7 @@ package Java;
 public class App extends App2 {
    
    @Override
-   public static void show_name(){
+   public void show_name(){
       System.out.println("Name: Coder Shiyar");
    }
 
