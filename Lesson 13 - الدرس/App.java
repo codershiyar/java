@@ -1,30 +1,40 @@
-
+import java.util.Scanner; 
 public class App {
+   public static void main(String[] args) {
+      Scanner keyboard = new Scanner(System.in);
 
-public static void main(String[] args) {
-// int counter = 1;
-// int number= 7;
-// while(counter<=20){
-// System.out.println(counter + " * " + number + " = " + (counter * number) );
-// counter++;
-// }
+      try {
+         System.out.println("Enter your age: ");
+         int age = keyboard.nextInt();
+         System.out.println("Age: "+ age);
+      } catch (Exception e) {
+         //TODO: handle exception
+         System.out.println("Error invalid data");
+      }
+    
 
-String[] webLanguages = {"html","css" ,"JavaScript" , "PHP"};
+      System.out.println("Enter your email: ");
+      keyboard.nextLine();
+      String email =keyboard.nextLine();
+      System.out.println("Email: " + email);
 
-int counter2 = 0;
-while(counter2<webLanguages.length){
-System.out.println("Language " + (counter2 + 1) + " : " + webLanguages[counter2]);
-counter2++;
+   } 
 }
 
-   }
-}
-
-
-// Java While Loop  
-// ---------------------------------------------------------------------
-// يستخدم لتكرار تنفيذ الأوامر الى ما يصبح الشرط الذي وضعته غير صحيح
-// ---------------------------------------------------------------------
-// while (condition الشرط) {
-//    // code block to be executed - الكود الذي ترغب بان يتم تنفيذها
-//  }
+// Java User Input (Scanner) يتم استخدامها لجعل مستخدم يقوم بتحديد بيانات
+// ------------------------------------------------------------------------------------------------------------------
+// import java.util.Scanner;                       لكي نتمكن من استخدام سكنر يجب علينا استدعاء ملف سكنر في جافا
+// Scanner keyboard = new Scanner(System.in);                            لانشاء متغير لقراء بيانات من لوحة مفاتيح
+// ------------------------------------------------------------------------------------------------------------------
+// nextLine()	Reads a String value from the user                           يستخدم لقراءة بيانات من نوع بيانات نصي
+// ------------------------------------------------------------------------------------------------------------------
+// nextBoolean()	Reads a boolean value from the user                                 لقراءة بيانات من نوع صح و خطا
+// ------------------------------------------------------------------------------------------------------------------
+// nextByte()	 Reads a byte value from the user             لقراءة بيانات من نوع ارقام ليس بها فاصلة من نوع بايت
+// ------------------------------------------------------------------------------------------------------------------
+// nextDouble() Reads a double value from the user    يستخدم لقراءة اعداد الذي بها فاصلة ونوع بياناته يكون دوبول
+// nextFloat()	Reads a float value from the user       يستخدم لقراءة اعداد الذي بها فاصلة ونوع بياناته يكون فلوت
+// ------------------------------------------------------------------------------------------------------------------
+// nextInt()	Reads a int value from the user                 يستخدم لقراءة اعداد الذي ليس بها فاصلة من نوع إينت
+// nextLong()	Reads a long value from the user        يستخدم لقراءة اعداد الذي ليس بها فاصلة من نوع اعداد طويلة
+// nextShort()	Reads a short value from the user       يستخدم لقراءة اعداد الذي ليس بها فاصلة من نوع اعداد قصيرة
