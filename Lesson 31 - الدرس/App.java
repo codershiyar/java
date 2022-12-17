@@ -1,38 +1,42 @@
+class App {
+    String name;
+    App app;
 
-public class App{
-  
-     App(){
-       
-     }
-     public static void main(String[] args) {
-     
+    void setApp(App app){
+       this.app =  app;
+    }
+    App(String name){
+        this();
+        this.name = name;  
+        System.out.println(this.getName());
+        setApp(getApp());
+    }
 
-      // replaceAll()      من خلالها يمكنك استبداله جزء من النص بجزء جديد        
-      // replaceFirst()     يقوم بإستبداول قيمة يطابق مع الجزء المحدد من النص , بالجزء جديد
-      // isEmpty()          يستخدم لتحقق إذا كان متغير من نوع بيانات نصي خالي من بيانات او لا        
-      // lastIndexOf()      تمركز اخر جزء يطابق مع الجزء المحدد     
-      // startsWith()        يستخدم لتحقق إن كان النص يبدأ بجزء الذي تحدده او لا     
-      // endsWith()          يستخدم لتحقق إن كان النص ينتهي بجزء الذي تحدده او لا    
-      String text = "Java, I like Java.";
-      text = text.replaceFirst("not", "@");
-      boolean isEmpty = text.isEmpty();
-      int lastIndexOf = text.indexOf("Java");
+     App getApp(){   return this; }
+    
+    App(){ System.out.println("Start App");  }
+    String getName(){return name;}
 
-      boolean startsWith = text.startsWith(" ");
-      boolean endsWith = text.endsWith(".");
-      // if(text.isEmpty()){
+    public static void main(String[] args) {
+       App app = new App("Learn Java");
+    }
+}
 
-      // }else{
+/*  --------------------------------------------------------------------
+    this keyword in Java  - شرح امر هذا في الجافا
+------------------------------------------------------------------------
+    this  يمكن استخدام هذا للإشارة إلى فاريبل مثيل في الاوبجكت الحالي
+    this           يمكن استخدام هذا للإستدعاء ميتود في الاوبجكت الحالي
+    this()                    يمكن استخدامها للاستدعاء كونستروكتور كلاس
+    this                       يمكن تمريرها كا قيمة عند استدعاء ميتود
+    this            يمكن تمريرها كا قيمة عند استدعاء كونستروكتور كلاس
+    this   يمكن استخدام هذا لإرجاع اوبجكت مثيل من كلاس الحالي في ميتود
+           
+    this can be used to refer current class instance variable. 
+    this can be used to invoke current class method (implicitly)
+    this() can be used to invoke current class constructor.
+    this can be passed as an argument in the method call.
+    this can be passed as argument in the constructor call.
+    this can be used to return the current class instance from the method.
 
-      // }
-      System.out.println(endsWith);
-
-     }
-     
- }
- 
- 
- 
- 
- 
-       
+*/
