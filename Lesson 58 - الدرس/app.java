@@ -1,44 +1,42 @@
-// 1: Scanner 
-// 2: Boolean datatype - if statment
-// 3: String equals()
-// 4: int + Strings 
-// 5: if without {}
-import java.util.Scanner;
-public class app {
+
+public class App{
+
+  
     public static void main(String[] args) {
-        if(false)
-        System.out.println("True");
-    
-        else{
-        System.out.println("false");
+        StringBuffer textBuffer = new StringBuffer("Coder Shiyar Java");
+        textBuffer.delete(0, 5);
+      //  textBuffer.reverse();
+        char position10 = textBuffer.charAt(10);
+        System.out.print(position10);
+
+     
+       
     }
+    
+}
+
+  // Part 1 - StringBuffer - جزء الأول
+        // append(String s)	يتم استخدامها لإضافة النص
+        // insert(int offset, String s) يُستخدم لإدراج النص المحدد إلى القيمة الذي يملك المتغير  في الموضع الذي تحدده
+        // replace(int startIndex, int endIndex, String str)  يستخدم لإستبدال جزء من النص الذي تحدده بقيمة جديدة تحددها بنفسك
        
 
-        
-        System.out.println(2+0+2+6 + " Year " );
 
-        // String text = "Java";
-        // if(text.equals("Java") ){
-        //     System.out.println("Correct");
-        // }
-        // boolean isRunning = false;
-        // if(isRunning){
-        //     System.out.println("Yes it is working");
-        // }
+   // Part 2 - StringBuffer - جزء الثاني
+        // delete(int startIndex, int endIndex)  يستخدم لحذف جزء من النص , تحدده بنفسك أي جزء ترغب بحذفها
+        // reverse()	 يستخدم لعكس النص.
+        // charAt(int index)	 يستخدم لإرجاع الحرف في الموضع المحدد.
 
-        // Scanner input = new Scanner(System.in);
-        // System.out.println("Age: ");
-        // int age = input.nextInt();
-        // input.nextLine();
-        // System.out.println("number: ");
-        // int number = input.nextInt();
-        // input.nextLine();
+   // Part 2 - StringBuffer - جزء الثاني
+        // delete(int startIndex, int endIndex)  يستخدم لحذف جزء من النص , تحدده بنفسك أي جزء ترغب بحذفها
+        // reverse()	 يستخدم لعكس النص.
+        // charAt(int index)	 يستخدم لإرجاع الحرف في الموضع المحدد.
+       
 
-        // System.out.println("Name: ");
-        // String name = input.nextLine();
-
-
-        
-        // System.out.println("Name: " + name + " Age:" + age);
-    }
-}
+        // Part 3 - StringBuffer - جزء الثالث
+        // length()	تُستخدم لإرجاع طول النص ، أي العدد الإجمالي للأحرف.
+        // substring(int beginIndex)  يقوم بإعادة لك القيمة الذي يملكه المتغير ابتداء من تمركز الذي تحدده
+       
+        // يقوم بإعادة لك القيمة الذي يملكه المتغير ابتداء من تمركز الذي تحدده إلى تمركز الذي تقوم بتحديدها
+        // substring(int beginIndex, int endIndex)  
+       

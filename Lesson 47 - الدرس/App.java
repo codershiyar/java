@@ -1,38 +1,26 @@
-
-public class App{
-  
-     App(){
+public class App extends  Settings{
+    public void printName(){ 
+        System.out.println("Name: test");
+    }
+    public static void main(String[] args) {
+    //    final String name = "Shiyar";
+    //     name = "Coder Shiyar";
        
-     }
-     public static void main(String[] args) {
-     
+    }
+}
 
-      // replaceAll()      من خلالها يمكنك استبداله جزء من النص بجزء جديد        
-      // replaceFirst()     يقوم بإستبداول قيمة يطابق مع الجزء المحدد من النص , بالجزء جديد
-      // isEmpty()          يستخدم لتحقق إذا كان متغير من نوع بيانات نصي خالي من بيانات او لا        
-      // lastIndexOf()      تمركز اخر جزء يطابق مع الجزء المحدد     
-      // startsWith()        يستخدم لتحقق إن كان النص يبدأ بجزء الذي تحدده او لا     
-      // endsWith()          يستخدم لتحقق إن كان النص ينتهي بجزء الذي تحدده او لا    
-      String text = "Java, I like Java.";
-      text = text.replaceFirst("not", "@");
-      boolean isEmpty = text.isEmpty();
-      int lastIndexOf = text.indexOf("Java");
+final class Settings{
+   final public void printName(){
+        System.out.println("Name: Coder Shiyar");
+    }
+}
 
-      boolean startsWith = text.startsWith(" ");
-      boolean endsWith = text.endsWith(".");
-      // if(text.isEmpty()){
 
-      // }else{
-
-      // }
-      System.out.println(endsWith);
-
-     }
-     
- }
- 
- 
- 
- 
- 
-       
+/* final(نهائي) :                               يتم استخدامها إذا كنت ترغب بجعل قيمة متغير ثابتة غير قابلة للتعديل
+                                                                    او ا كنت ترغب بجعل كلاس او ميتود غير قابل للتعديل  
+------------------------------------------------------------------------------------------------------------------------
+ 1: The final keyword is a non-access modifier used for classes, attributes and methods, which makes them non-changeable
+ ------------------------------------------------------------------------------------------------------------------------
+ 2: The final keyword is useful when you want a variable to always store the same value, like PI (3.14159...)
+ ------------------------------------------------------------------------------------------------------------------------
+*/

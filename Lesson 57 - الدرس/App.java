@@ -1,27 +1,34 @@
 
-import java.util.Scanner;
-
 public class App{
-  public static void main(String[] args) {
-   Scanner scan = new Scanner(System.in);
- //  String name = scan.nextLine();
-//   boolean isMarried = scan.nextBoolean();
-//  System.out.println("Name is : " + name);
 
-System.out.println("ضع رقم الأول");
-int number1 = scan.nextInt();
-System.out.println("ضع الرقم الثاني");
-int number2 = scan.nextInt();
+  
+    public static void main(String[] args) {
 
-if(number1>number2){
-    System.out.println("القيمة المتغير الأول اكبر");
-}else if(number1==number2){
-    System.out.println("العددين متساويين");
-}
-else{
-  System.out.println("القيمة المتغير الثاني أكبر");  
+        String text = "Coder Shiyar";
+
+        StringBuffer textBuffer = new StringBuffer("Coder Shiyar");
+        textBuffer.append(" is a teacher");
+        textBuffer.insert(0, "1: ");
+        textBuffer.replace(0, 2, "YouTube: ");
+
+        System.out.println(textBuffer);
+
+        // Part 1 - StringBuffer - جزء الأول
+        // append(String s)	يتم استخدامها لإضافة النص
+        // insert(int offset, String s) يُستخدم لإدراج النص المحدد إلى القيمة الذي يملك المتغير  في الموضع الذي تحدده
+        // replace(int startIndex, int endIndex, String str)  يستخدم لإستبدال جزء من النص الذي تحدده بقيمة جديدة تحددها بنفسك
+       
+
+     
+    }
+    
 }
 
-double double_number = scan.nextDouble();
-  }
-}
+
+
+
+
+
+
+
+      
